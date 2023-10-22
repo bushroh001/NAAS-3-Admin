@@ -60,7 +60,7 @@ function UploadAEC() {
 
          <div className='flex justify-between mt-[15px] items-center'>
 
-    <a href={data.document[0].url} download={data.Topic}  className={"text-xl p-1 "}><span className='flex gap-x-1 justify-center tracking-wider  text-[14px] items-center'>Download File<BiDownload/></span></a>
+    <a href={data.document[0].url} download="lecture note"  className={"text-xl p-1 "}><span className='flex gap-x-1 justify-center tracking-wider  text-[14px] items-center'>Download File<BiDownload/></span></a>
          </div>
 
 
