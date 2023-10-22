@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Button from './Button'
-
+import { Oval } from 'react-loader-spinner'
 import { useLocation, useNavigate} from "react-router-dom"
 import axios from "axios"
 function UploadLectureAEC301() {
@@ -15,8 +15,10 @@ function UploadLectureAEC301() {
      const [Topic, setTopic] = useState("")
      const [Description, setDescription] = useState("")
      const [document, setdocument] = useState("")
-
+const [Loading , setLoading] = useState(false)
+    
      const saveForm = async (e) => {
+         setLoading(true)
       e.preventDefault();
        
        axios.post("https://fair-erin-chameleon-gown.cyclic.app/api/aec301/add", {Topic,Description,document})
@@ -30,6 +32,7 @@ function UploadLectureAEC301() {
     }).catch((err)=> {
         console.log(err)
         alert("Unable to submit form, kindly complete the form")
+          setLoading(false)
       })
       
       
@@ -102,8 +105,8 @@ function UploadLectureAEC301() {
       
                {/* Upload button */}
                <div className='flex justify-center items-center mb-2'>
-             <Button name="Upload"/>
-               </div>
+        {Loading ? <div className='pt-5 pb-2'><Oval height="30" width="30" radius="4" color="#140a22" ariaLabel="loading"/> </div> : <Button name="Upload"/>}
+             </div>
             </form>
          </div>
 
