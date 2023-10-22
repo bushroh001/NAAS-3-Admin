@@ -67,7 +67,7 @@ function ViewHome (props) {
         {
             CourseTitle : "Introductory Pedology & Soil Physics.",
             CourseCode: "SLM 303",
-            Link : "view-SLM303",
+            Link : "view-SLM301",
             image  : image7,
         },
        ]
