@@ -12,13 +12,13 @@ import {ThreeDots} from "react-loader-spinner"
 
 
 
-function ViewAEC301 (props) {
+function ViewANS301 (props) {
 
 
     const location = useLocation()
     const data = location.state
      
-    const ArrayList = props.LectureListAEC301     
+    const ArrayList = props.LectureListANS301    
                 
 
 
@@ -79,4 +79,4 @@ function ViewAEC301 (props) {
               );
                    }
 
-     export default ViewAEC301;
+     export default ViewANS301;
