@@ -18,6 +18,7 @@ function UploadLectureANS301() {
 const [Loading , setLoading] = useState(false)
     
      const saveForm = async (e) => {
+         setLoading(true)
       e.preventDefault();
        
        axios.post("https://fair-erin-chameleon-gown.cyclic.app/api/ans301/add", {Topic,Description,document})
@@ -31,6 +32,7 @@ const [Loading , setLoading] = useState(false)
     }).catch((err)=> {
         console.log(err)
         alert("Unable to submit form, kindly complete the form")
+          setLoading(false)
       })
       
       
