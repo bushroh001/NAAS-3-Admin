@@ -60,7 +60,7 @@ function UploadAEC() {
 
          <div className='flex justify-between mt-[15px] items-center'>
 
-    <a href={data.document[0].url} download="lecture note"  className={"text-xl p-1 "}><span className='flex gap-x-1 justify-center tracking-wider  text-[14px] items-center'>Download File<BiDownload/></span></a>
+    <a href={data.document[0].url}   className={"text-xl p-1 "}><span className='flex gap-x-1 justify-center tracking-wider  text-[14px] items-center'>Download File<BiDownload/></span></a>
          </div>
 
 
@@ -70,7 +70,7 @@ function UploadAEC() {
                <div className='flex justify-between  my-[15px]  mb-[15px] items-center'>
                <Link to="/view">
                 
-             <button className='p-[3px] bg-[#182c25] hover:text-white duration-300 transition-colors focus:outline-0 hover:border-[0.5px] border-[#182c25] hover:bg-white  text-white rounded-lg'>Back</button>
+             <button className='p-[3px] bg-[#182c25] hover:text-white duration-300 transition-colors focus:outline-0 hover:border-[0.5px] border-[#182c25] hover:bg-[#182c25]  text-white rounded-lg'>Back</button>
                </Link>
              <button onClick={()=>deleteUser(data._id)} className='p-[3px] text-white bg-[#182c25] duration-300 transition-colors focus:outline-0 hover:text-red-500 hover:border-[1px] hover:bg-white hover:border-red-500 rounded-lg'>delete</button>
                </div>
